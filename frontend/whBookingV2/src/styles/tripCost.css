@@ -1,0 +1,15 @@
+#cost {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+#cost p {
+    flex-basis: 100%;
+    color: #F57E20;
+    font-size: 29px;
+    font-weight: 600;
+}

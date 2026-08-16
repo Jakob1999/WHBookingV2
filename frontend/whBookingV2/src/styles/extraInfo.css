@@ -1,0 +1,62 @@
+#extraInfo {
+    flex-basis: 100%;
+    text-align: center;
+    line-height: 1.6em;
+    font-size: 17px;
+    border-top: 1.5px #F57E20 solid;
+    width: 40vw;
+    margin: 0 auto;
+    padding: 8px;
+    min-height: 5vh;
+}
+
+#infoTitle {
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: 1.5%;
+    cursor: pointer;
+}
+
+#infoText {
+    margin-top: 20px;
+    font-weight: 400;
+    max-height: 45vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+#infoText p {
+    text-align: left;
+    font-size: 17px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#infoText h4 {
+    text-align: center;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#infoText h5 {
+    text-align: left;
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    
+}
+
+#infoText ul {
+    list-style-type: circle;
+    display: list-item;
+    text-align: left;
+}

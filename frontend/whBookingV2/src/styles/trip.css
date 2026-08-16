@@ -1,0 +1,55 @@
+.tripImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 70vh;
+    color: white;
+    display: grid;
+    grid-template-rows: 4fr 2fr;
+}
+
+#title {
+    opacity: 0%;
+    font-size: 4rem;
+    font-weight: 300;
+    text-align: center;
+    align-self: center;
+    animation: textSlide .6s .5s linear forwards;
+}
+
+#imageTextInfo {
+    opacity: 0%;
+    padding: 0;
+    font-weight: 300;
+    font-size: 1.5rem;
+    animation: textSlide .6s .5s linear forwards;
+}
+
+#imageTextInfo p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+
+#tripInfoBody {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#tripInfoBodyRight {
+    width: 60vw;
+    height: min-content;
+}
+
+@keyframes textSlide {
+    0% {
+        transform: translateY(50px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+

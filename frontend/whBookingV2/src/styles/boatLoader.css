@@ -1,0 +1,40 @@
+#boatBox {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@keyframes boatFloat {
+
+    0% {
+        rotate: 0deg;
+        transform: translateY(0px);
+    }
+    25% {
+        rotate: -5deg;
+        transform: translateY(-2px);
+
+    }
+    50% {
+        rotate: 0deg;
+        transform: translateY(0px);
+
+    }
+    75% {
+        rotate: 5deg;
+        transform: translateY(+2px);
+
+    }
+    100% {
+        rotate: 0deg;
+        transform: translateY(0px);
+    }
+ }
+
+#boat {
+    animation: boatFloat infinite linear 1.5s;
+    transform-origin: center center;
+    width: 100px;
+}
