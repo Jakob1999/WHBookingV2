@@ -1,7 +1,8 @@
 import { tripCardData } from "../types/propTypes";
 
 type TripListResponse = [tripCardData[], number];
-const API_BASE_URL = "http://localhost:8080/api";
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || "http://localhost:8080/api";
 
 if (import.meta.env.DEV) {
   console.info("[Data source] Frontend -> Backend API -> Sanity");
