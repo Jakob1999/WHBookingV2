@@ -11,7 +11,7 @@ export type tripCardData = {
 
 export type remaindingTripData = {
     info: string,
-    cost: number,
+    dayCost: number,
     sailText: string, 
     includeText: string, 
     skipperMail: string

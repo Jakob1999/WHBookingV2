@@ -10,6 +10,8 @@ import ExtraInfo from "../components/ExtraInfo"
 import AboutTrip from "../components/aboutTrip"
 import BookButton from "../components/bookButton"
 import TripCost from "../components/tripCost"
+import noraa from "../assets/noraa.jpg"
+
 
 interface propType {
   trip: tripCardData
@@ -46,7 +48,11 @@ function Trip() {
       try {
       
         const img : string = await getImage(tripData.trip.image)
-        setImgUrl(img)
+        if (img === undefined || img === null || img === "") {
+          setImgUrl(noraa)
+        } else {
+          setImgUrl(img)
+        }
         
       } catch (error) {
         console.error("Error fetching image: ", error)
@@ -69,7 +75,7 @@ function Trip() {
       <div id="tripInfoBody">
         <AboutTrip tripText={tripdataRest.info}/>
         <div id="tripInfoBodyRight">
-          <TripCost cost={tripdataRest.cost} student_cost={tripdataRest.student_cost}/>
+          <TripCost dayCost={tripdataRest.dayCost}/>
           <BookButton status={tripData.trip.status} old={tripData.old} skipperMail={tripdataRest.skipperMail}/>
           <ExtraInfo extraText={tripdataRest.sailText} title="Sailing with us" top={true}/>
           <ExtraInfo extraText={tripdataRest.includeText} title="What is included" top={false}/>   

@@ -14,7 +14,7 @@ export default function BookButton({status, old, skipperMail} : {status : string
     <a id="bookButton" href={`mailto:${skipperMail}`}>
         {status == "Full" ? 
           "Waiting list" : 
-          "Book trip"
+          "Apply"
         }
       </a>
   }

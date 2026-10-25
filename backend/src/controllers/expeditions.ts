@@ -29,7 +29,7 @@ export const getCommingTrips = async(req: Request, res: Response) => {
                 startLoc,
                 endLoc,
                 status,
-                "image": coalesce(image.asset->url, legacyImage)
+                "image": image.asset->url
             }`,
             { offset, end }
         );
@@ -72,7 +72,7 @@ export const getOldTrips = async(req: Request, res: Response) => {
                 startLoc,
                 endLoc,
                 status,
-                "image": coalesce(image.asset->url, legacyImage)
+                "image": image.asset->url
             }`,
             { offset, end }
         );
@@ -106,8 +106,7 @@ export const getTrip = async (req: RequestWithId, res: Response) => {
         const trip = await sanityClient.fetch(
             `*[_type == "trip" && _id == $id][0] {
                 info,
-                cost,
-                student_cost,
+                dayCost,
                 sailText,
                 includeText,
                 skipperMail,

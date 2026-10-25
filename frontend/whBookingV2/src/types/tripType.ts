@@ -7,7 +7,7 @@ export type tripType = {
     image: string,
     startLoc: string,
     endLoc: string,
-    cost: number,
+    dayCost: number,
     status: "Open" | "Limited spaces" | "Full",
     sailText: string,
     includeText: string,
@@ -16,8 +16,7 @@ export type tripType = {
 
 export type remaindingTripData = {
     info: string,
-    cost: number,
-    student_cost: number,
+    dayCost: number,
     sailText: string, 
     includeText: string, 
     skipperMail: string
