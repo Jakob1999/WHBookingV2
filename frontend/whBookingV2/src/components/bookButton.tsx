@@ -1,6 +1,14 @@
 import "../styles/bookButton.css"
+import { tripCardData } from "../types/propTypes"
+import { useNavigate } from "react-router-dom"
 
-export default function BookButton({status, old, skipperMail} : {status : string, old: boolean, skipperMail: string}) {
+
+export default function BookButton({status, old, skipperMail, trip} : {status : string, old: boolean, skipperMail: string, trip: tripCardData}) {
+  const navigate = useNavigate()
+  const handleNavigation = () => {
+
+        navigate(`/trip/${trip.id}/apply`, { state: { trip }})
+    }
 
   return (
     <>
@@ -11,7 +19,7 @@ export default function BookButton({status, old, skipperMail} : {status : string
       </a>
     
     :
-    <a id="bookButton" href={`mailto:${skipperMail}`}>
+    <a id="bookButton" onClick={handleNavigation}>
         {status == "Full" ? 
           "Waiting list" : 
           "Apply"

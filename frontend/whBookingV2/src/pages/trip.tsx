@@ -76,7 +76,7 @@ function Trip() {
         <AboutTrip tripText={tripdataRest.info}/>
         <div id="tripInfoBodyRight">
           <TripCost dayCost={tripdataRest.dayCost}/>
-          <BookButton status={tripData.trip.status} old={tripData.old} skipperMail={tripdataRest.skipperMail}/>
+          <BookButton status={tripData.trip.status} old={tripData.old} skipperMail={tripdataRest.skipperMail} trip={tripData.trip}/>
           <ExtraInfo extraText={tripdataRest.sailText} title="Sailing with us" top={true}/>
           <ExtraInfo extraText={tripdataRest.includeText} title="What is included" top={false}/>   
         </div>

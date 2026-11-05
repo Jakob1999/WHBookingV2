@@ -45,7 +45,7 @@ function TripCard(props : propType) {
 
     const handleNavigation = () => {
 
-        navigate("/trip", { state: { props }})
+        navigate(`/trip/${props.trip.id}`, { state: { props }})
     }
 
     
