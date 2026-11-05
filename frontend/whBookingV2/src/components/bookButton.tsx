@@ -3,7 +3,7 @@ import { tripCardData } from "../types/propTypes"
 import { useNavigate } from "react-router-dom"
 
 
-export default function BookButton({status, old, skipperMail, trip} : {status : string, old: boolean, skipperMail: string, trip: tripCardData}) {
+export default function BookButton({status, old, trip} : {status : string, old: boolean, trip: tripCardData}) {
   const navigate = useNavigate()
   const handleNavigation = () => {
 

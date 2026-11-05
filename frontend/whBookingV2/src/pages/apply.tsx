@@ -2,7 +2,7 @@ import { Alert, Button, Checkbox, Container, Group, Select, Stack, Text, TextInp
 import { useForm } from "@mantine/form";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { apply } from "../services/expeditions";
+import { apply, ApplyValues } from "../services/expeditions";
 
 const phoneCodes = [
   { value: "+47", label: "Norway (+47)" },
@@ -43,7 +43,7 @@ function Apply() {
     const [loading, setLoading] = useState(false)
     const [status, setStatus] = useState<"idle" | "success" | "error">("idle")
 
-    const form = useForm({
+    const form = useForm<ApplyValues>({
         mode: 'uncontrolled',
         initialValues: {
           name: '',
