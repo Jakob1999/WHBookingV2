@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 function NavBar() {
 
-    const breakPoint = useMediaQuery('(min-width: 980px)')
+    const breakPoint = useMediaQuery('(min-width: 1080px)')
 
     const [isSticky, setIsSticky] = useState(false);
 
