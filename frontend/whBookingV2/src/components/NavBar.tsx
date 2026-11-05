@@ -24,7 +24,7 @@ function NavBar() {
 
     return (
         <div className={isSticky ? "stickyHeader" : "header"}>
-            <a href="https://wicked-horizon.com" ><img src={logoLarge}  className={isSticky ? "stickyLogo" : "logo"} alt="Wicked Horizon Logo" /></a>
+            <a href="/" ><img src={logoLarge}  className={isSticky ? "stickyLogo" : "logo"} alt="Wicked Horizon Logo" /></a>
             {breakPoint? <NavList /> : <NavDrop />}
         </div>
     )

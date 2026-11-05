@@ -13,7 +13,7 @@ function NavDropMenu({open} : {open: boolean}) {
                 <a href="https://wicked-horizon.com/blue-water-workshop/" className="dropLinks">BLUE WATER WORKSHOP</a>
                 <a href="https://wicked-horizon.com/about-us/" className="dropLinks" >ABOUT US</a>
                 <a href="https://www.booking-wicked-horizon.com/" className="dropLinks" style={{color: "#2ea3f2"}} >EXPEDITIONS</a>
-                <a href="https://wicked-horizon.org/activities/" className="dropLinks">ACTIVITIES</a>
+                <a href="https://wicked-horizon.org/" className="dropLinks">ACADEMY</a>
                 </div>
         </Collapse>
         </>

@@ -9,7 +9,7 @@ function NavList() {
         <a href="https://wicked-horizon.com/blue-water-workshop/" className="links">BLUE WATER WORKSHOP</a>
         <a href="https://wicked-horizon.com/about-us/" className="links" >ABOUT US</a>
         <a href="https://www.booking-wicked-horizon.com/" className="activelink" style={{color: "#2ea3f2"}} >EXPEDITIONS</a>
-        <a href="https://wicked-horizon.org/activities/" className="lastlink">ACTIVITIES</a>
+        <a href="https://wicked-horizon.org/" className="lastlink">ACADEMY</a>
      </div>
     );
 

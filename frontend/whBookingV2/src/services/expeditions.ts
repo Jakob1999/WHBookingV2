@@ -34,9 +34,9 @@ export async function trip(id: string) {
 export type ApplyValues = {
   name: string;
   email: string;
+  phoneCode: string;
   phone: string;
   student: boolean;
-  organizer: boolean;
 };
 
 export async function apply(tripId: string, values: ApplyValues) {
