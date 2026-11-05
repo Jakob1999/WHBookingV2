@@ -31,6 +31,30 @@ export async function trip(id: string) {
   }
 }
 
+export type ApplyValues = {
+  name: string;
+  email: string;
+  phone: string;
+  student: boolean;
+  organizer: boolean;
+};
+
+export async function apply(tripId: string, values: ApplyValues) {
+  const response = await fetch(`${API_BASE_URL}/apply/`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ tripId, ...values })
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to send application");
+  }
+
+  return response.json();
+}
+
 export async function trips(limit : number, offset : number): Promise<TripListResponse> {
   try {
     const response = await fetch(`${API_BASE_URL}/trips/`, {
